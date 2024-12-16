@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scripts/slime.gd" id="1_oxw8e"]
 [ext_resource type="PackedScene" uid="uid://8le0xhd7iycj" path="res://scenes/killzone.tscn" id="2_5puqg"]
 [ext_resource type="Script" path="res://scripts/stompzone.gd" id="4_yd05w"]
-[ext_resource type="AudioStream" uid="uid://dpejqyqphvuk0" path="res://assets/sounds/hurt.wav" id="5_5pthg"]
+[ext_resource type="AudioStream" uid="uid://ccdgjweahuyrh" path="res://assets/sounds/explosion.wav" id="5_isoq8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ajht6"]
 atlas = ExtResource("1_lt8ik")
@@ -372,7 +372,7 @@ libraries = {
 }
 
 [node name="StompedSFX" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("5_5pthg")
+stream = ExtResource("5_isoq8")
 bus = &"SFX"
 
 [connection signal="body_entered" from="Stompzone" to="Stompzone" method="_on_body_entered"]

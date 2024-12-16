@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ivms5"]
 [ext_resource type="Texture2D" uid="uid://5ennnmboglo2" path="res://assets/sprites/knight.png" id="1_qvods"]
-[ext_resource type="AudioStream" uid="uid://ccdgjweahuyrh" path="res://assets/sounds/explosion.wav" id="3_wfy8b"]
+[ext_resource type="AudioStream" uid="uid://cvo0upjb4f55r" path="res://assets/sounds/roblox_oof.wav" id="3_wj3rl"]
 [ext_resource type="AudioStream" uid="uid://fmy2a2eduk18" path="res://assets/sounds/jump.wav" id="4_btd40"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_euqcr"]
@@ -337,7 +337,7 @@ position = Vector2(-1, -7)
 shape = SubResource("CircleShape2D_sf83i")
 
 [node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_wfy8b")
+stream = ExtResource("3_wj3rl")
 bus = &"SFX"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
